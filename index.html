@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hey Cutie ❤️</title>
+  <link rel="stylesheet" href="crush.css">
+</head>
+<body>
+
+  <!-- MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="nutes.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <!-- Music Button -->
+  <button id="musicBtn">🎵 Music</button>
+
+  <!-- Main Card -->
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="page active" id="page1">
+      <h1 class="title">Hey Cutie ❤️</h1>
+      <p class="subtitle typing">
+        I Have Something To Ask You... 🥺
+      </p>
+
+      <button class="main-btn" onclick="nextPage(2)">
+        Start 💌
+      </button>
+    </div>
+
+    <!-- Love Question -->
+    <div class="page" id="page2">
+      <h1>Do you love me? 🥺❤️</h1>
+
+      <div class="btns">
+        <button class="yes-btn" onclick="yesLove()">
+          YES 💖
+        </button>
+
+        <button class="no-btn" onclick="noLove()">
+          NO 😭
+        </button>
+      </div>
+    </div>
+
+    <!-- Cute Question -->
+    <div class="page" id="page3">
+      <h1>What do you like about me? 🥺</h1>
+
+      <input
+        type="text"
+        id="answer"
+        placeholder="Type here cutie..."
+      />
+
+      <button class="main-btn" onclick="checkAnswer()">
+        Submit 💌
+      </button>
+
+      <p id="rizzText"></p>
+
+      <button
+        class="main-btn hidden"
+        id="nextBtn"
+        onclick="nextPage(4)"
+      >
+        Next ➜
+      </button>
+    </div>
+
+    <!-- Final Question -->
+    <div class="page" id="page4">
+      <h1>
+        Now tell me honestly... 🥺❤️
+      </h1>
+
+      <h2>Do you love me?</h2>
+
+      <div class="btns">
+        <button
+          id="bigYes"
+          class="yes-btn"
+          onclick="finalYes()"
+        >
+          YES 💖
+        </button>
+
+        <button
+          id="tinyNo"
+          class="no-btn"
+          onclick="finalNo()"
+        >
+          NO 😭
+        </button>
+      </div>
+
+      <p id="funnyText"></p>
+    </div>
+
+    <!-- Ending -->
+    <div class="page" id="page5">
+      <h1 class="love-title">
+        YAYYYYY UMMWHH 😭❤️
+      </h1>
+
+      <h2>I LOVE YOU SO MUCH CUTIEEEE 💕</h2>
+
+      <p>
+        You + Me = Perfect Combo 😭💖
+      </p>
+
+      <button class="main-btn">
+        Send Me A Hug 🤗❤️
+      </button>
+    </div>
+
+  </div>
+
+  <script src="crush.js"></script>
+</body>
+</html>
